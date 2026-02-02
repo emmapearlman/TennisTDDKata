@@ -8,9 +8,11 @@
         }
 
         [Test]
-        public void Test1()
+        public void TestWhenGameStartedScoreIsLoveAll()
         {
-            Assert.Pass();
+            var tennis = new TennisTDDKata.Tennis();
+            var score = tennis.GetScore(0,0);
+            Assert.That("Love-All", Is.EqualTo(score));
         }
     }
 }
